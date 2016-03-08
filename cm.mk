@@ -1,6 +1,10 @@
 ## Specify phone tech before including full_phone
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
+#BootAnim
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
+
 # Release name
 PRODUCT_RELEASE_NAME := i8200
 
@@ -13,6 +17,6 @@ $(call inherit-product, device/samsung/i8200/device_i8200.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := i8200
 PRODUCT_NAME := cm_i8200
-PRODUCT_BRAND := samsung
+PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := i8200
 PRODUCT_MANUFACTURER := samsung
